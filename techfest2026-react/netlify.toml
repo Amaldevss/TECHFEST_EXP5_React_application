@@ -1,0 +1,19 @@
+[build]
+  base = "techfest2026-react"
+  command = "npm run build"
+  publish = "dist"  # Change to "build" if using Create React App instead of Vite
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "text/javascript"
+
+[[headers]]
+  for = "/*.mjs"
+  [headers.values]
+    Content-Type = "text/javascript"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
