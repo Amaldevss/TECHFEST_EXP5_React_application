@@ -1,0 +1,46 @@
+echo ".env" >> .gitignore
+echo "*.env" >> .gitignore
+# Environment Variables (Keep API keys and secrets safe)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependencies (Installed packages - very large, install fresh on servers)
+node_modules/
+/node_modules
+
+# Build & Production Outputs
+dist/
+build/
+out/
+.next/
+
+# Logs & Debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+# OS-generated files (System junk)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Code Editor Settings (Keep individual editor setups local)
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Testing & Coverage
+coverage/
+.nyc_output/
