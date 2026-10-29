@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const API = "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Events({ onGoToRegistrations }) {
   const [events, setEvents] = useState([]);
